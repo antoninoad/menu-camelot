@@ -1,0 +1,136 @@
+body {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('carta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.titolo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+.titolo h6 {
+    margin-top: -20px;
+}
+
+#separatore {
+    background-color: black;
+    height: 2px;
+    width: 200px;
+    margin-top: -30px;
+}
+
+.riquadro_menu {
+    padding: 16px;
+    border: 2px solid black;
+    margin-top: 20px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.colonna1, .colonna2 {
+    flex-basis: 48%;
+}
+
+.colonna1 h2, .colonna2 h2 {
+    margin-top: 40px; /* Aggiunto margine per distanziare le sezioni */
+    font-weight: bold;
+}
+
+.separ {
+    display: flex;
+    align-items: center;
+}
+
+.separ img {
+    max-height: 20px;
+    margin-left: 5px;
+}
+
+.caldo, .bruschette, .grigliata_mista, .churros, .margherita, .romana, .patatosa, .san_daniele, .diavola, .marinara, .lepanto, .acqua, .birra, .coca-cola, .aranciata, .caffè, .limoncello {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.paragrafi {
+    margin-top: -5px;
+    color: rgb(50, 50, 50);
+    font-size: 0.9em;
+    max-width: 100%;
+}
+
+.riquadro_menu p {
+    margin: 0;
+}
+
+.riquadro_menu h2 {
+    margin-bottom: 10px;
+}
+.contenitore_insta {
+    display: flex;
+    justify-content: center; /* Centra il contenitore se necessario */
+    margin-top: 10px;
+}
+
+.instagram-button {
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    height: 40px;
+    background-color: black;
+    border-radius: 8px;
+    width: 200px;
+    color: white;
+    cursor: pointer; /* Cambia il cursore a "puntatore" */
+    transition: background-color 0.3s; /* Transizione per l'effetto hover */
+}
+
+.instagram img {
+    height: 40px;
+    margin-left: 5px;
+}
+
+.instagram:hover {
+    background-color: #333; /* Cambia colore per effetto hover */
+}
+
+
+@media (max-width: 768px) {
+    .riquadro_menu {
+        flex-direction: column;
+    }
+
+    .colonna1, .colonna2 {
+        flex-basis: 100%;
+    }
+
+    .titolo {
+        font-size: 24px;
+    }
+
+    #separatore {
+        width: 150px;
+    }
+}
